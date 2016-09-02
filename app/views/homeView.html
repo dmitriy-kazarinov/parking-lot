@@ -1,0 +1,4 @@
+<h1>Home {{$ctrl.count}}</h1>
+<p>Hello, {{ $ctrl.user.name }} !</p>
+<input type="text" name="name" ng-model="$ctrl.dataInput" ng-model-options="{debounce: { 'default': 250, 'blur': 0 }}">
+<p>Input, {{ $ctrl.dataInput }} !</p>
