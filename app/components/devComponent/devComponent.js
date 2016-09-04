@@ -21,6 +21,6 @@ function devController() {
   };
 }
 app.component('devComponent', {
-  templateUrl: '/app/views/devView.html',
+  templateUrl: '/app/components/devComponent/devView.html',
   controller: [devController]
 });

@@ -8,10 +8,6 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
                 url: '/home',
                 templateUrl: '/app/views/general.html'
             });
-        //$locationProvider
-        //    .html5Mode({
-        //        enabled: true,
-        //        requireBase: false
-        //    });
+        //$locationProvider.html5Mode(true);
 
     }]);

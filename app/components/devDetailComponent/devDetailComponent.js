@@ -7,7 +7,7 @@ function devDetailController() {
   };
 }
 app.component('devDetail', {
-  templateUrl: '/app/views/devDetailView.html',
+  templateUrl: '/app/components/devDetailComponent/devDetailView.html',
   controller: [devDetailController],
   bindings: {
     dev: '<',
