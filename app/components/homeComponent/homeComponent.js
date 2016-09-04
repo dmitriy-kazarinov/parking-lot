@@ -4,6 +4,7 @@ function homeController(homeService) {
   this.user = {name: 'world'};
   this.$postLink = function () {
     console.log('postlink');
+    console.log(this.count);
   };
   this.$onInit = function() {
     //var homeService = app.injector.get('homeService');
@@ -11,12 +12,11 @@ function homeController(homeService) {
   };
 
   this.dataInput = "Test";
-
 }
 app.component('homeComponent', {
   bindings: {
     count:"<"
   },
-  templateUrl: '/app/views/homeView.html',
-  controller: ["$http", "homeService", homeController]
+  templateUrl: '/app/components/homeComponent/homeView.html',
+  controller: ["$http", "homeService", homeController],
 });
